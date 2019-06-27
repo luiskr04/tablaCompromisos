@@ -2,8 +2,8 @@
 /*Estilos de la tabla en general*/
 .tabla-compromisos .encabezado{background-color:black;color:white;padding:10px;}
 .encabezado img{max-width:40px;max-height:auto;margin:2px;}
-.row {border:1px solid black;border-radius:2px;cursor:pointer;}
-.comp:hover {border:2px solid #D6A40E;opacity:.9;}
+.row {border:1px solid black;border-radius:2px;}
+.comp:hover {border:2px solid #D6A40E;opacity:.9;cursor:pointer;}
 .compromiso img{width:70%;} 
 .compromiso p{font-size:.7rem;color:black;}
 .informacion {padding:10px;}
@@ -50,6 +50,8 @@
 
  /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+ /*Diseño de la imagen dentro del lightBox*/
+ #imagen-info img{position:fixed;width:683px;height:384px;top:50%;margin-top:-192px;left:50%;margin-left:-341px;}
 
 }
 
