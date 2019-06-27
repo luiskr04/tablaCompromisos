@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es-Mx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Gobierno Irapuato Compromisos firmados">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Compromisos Firmados</title>
+    </head>
+    <body>
+
+            <!--LightBox para mostrar la imagen seleccionada-->
+             <div id="imagen-info" onclick="cierraLightBox(0)" class="">
+                     <!--Boton para cerrar el lightBox-->
+                     <button id="btn-cerrar">x</button>
+                     <!--Imagen-->
+                     <img id="imagen" src="assets/img/compromisos+/c1.png" class="img-fluid">
+             </div>
+
+             <!--Inicio de la tabla seleccionada-->
+        <section class="container-fluid tabla-compromisos">
+            <div class="row justify-content-center text-center encabezado"><!--Titulo prinicipal de la tabla-->
+                <img src="assets/img/compromisos/encabezado.png" class="img-fluid">
+                <h1>Cuales fueron los compromisos firmados por el alcalde?</h1>
+                <p>El observatorio ciudadano Irapuato Como Vamos? dara seguimiento a estos compromisos de manera trimestral durante el periodo 2018-2021</p>
+            </div>
+
+            <!--compromiso 1 Policia Preventiva-->
+            <div class="row comp" id="c1" onclick="muestraLightBox(1)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c1.png" class="img-fluid">
+                    <p class="text-justify">Fuente: Secretaría de seguridad pública municipal (El observatorio Ciudadano no ha tenido acceso a evidencia que             permita corroborar esta información)</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Contar con 1.8 policias preventivos por cada 1000 habitantes.</h3>
+                    <p>Al cierre del 1er trimestre 2019 se tiene un déficit del 36% para cumplir el compromiso firmado.</p>
+                    <h3>100% de elementos con pruebas de control de confianza aprobadas al 2019.</h3>
+                    <p>99% de elementos con pruebas de control y confianza aprobadas.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 3 Robo de vehiculo-->
+            <div class="row comp" id="c3" onclick="muestraLightBox(3)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c3.png" class="img-fluid">
+                    <p class="text-justify">Fuente: Secretariado Ejecutivo del Sistema Nacional de Seguridad pública.</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Reducir un 10% el robo de vehiculo sobre la tasa anualizada de 82.6 robos por cada 100,000 habitantes.</h3>
+                    <p>Se ha mantenido una taza por debajo de la meta trazada lo cual es <b>positivo</b>.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoVerde.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 4 Robo a casa habitacion-->
+            <div class="row comp" id="c4" onclick="muestraLightBox(4)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c4.png" class="img-fluid">
+                    <p class="text-justify">Fuente: Secretariado Ejecutivo del Sistema Nacional de Seguridad pública.</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Reducir un 10% el roobo a casa habitación sobre la tasa anualizada de 52.7 robos por cada 100,000 habitantes.</h3>
+                    <p>Meta tasa anual: 47.43 robos por cada 1000,000 habitantes (275 carpetas de investigaci)</p>
+                    <p>Se ha mantenido una taza por encima de la meta trazada lo cual es <b>negativo</b>.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoRojo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 5 Robo a negocio-->
+            <div class="row comp" id="c5" onclick="muestraLightBox(5)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c5.png" class="img-fluid">
+                    <p class="text-justify">Fuente: Secretariado Ejecutivo del Sistema Nacional de Seguridad pública.</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Mantener la tasa de robo a negocio por debajo del promedio de los últimos 5 años.</h3>
+                    <p>Meta tasa anual: 123.82 robos por cada 100,000 habitantes (719 carpetas de investigación por robo a negocio al año)</p>
+                    <p>A pesar de que la tendencia va para abajo en este 2019, aun se tiene tasa por encima de la meta trazada lo cual es <b>negativo</b>.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 6 Robo con violencia-->
+            <div class="row comp" id="c6" onclick="muestraLightBox(6)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c6.png" class="img-fluid">
+                    <p class="text-justify">Fuente: Secretariado Ejecutivo del Sistema Nacional de Seguridad pública.</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Mantener la de robo con violencia por debajo del promedio de los últimos 3 años.</h3>
+                    <p>Meta tasa anual: 306 robos con violencia por cada 100,000 habitantes (177 carpetas de investigación por robos con violencia al año)</p>
+                    <p>A pesar de que la tendencia va para abajo en este 2019, aun se tiene tasa por encima de la meta trazada lo cual es <b>negativo</b>.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 7 Policia de Transito-->
+            <div class="row comp" id="c7" onclick="muestraLightBox(7)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c7.png" class="img-fluid">
+                    <p class="text-justify">Fuente: Secretaria de seguridad pública municipal (El observatorio ciudadano no ha tenido acceso a evidencia que permita corroborar esta información)</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Contar con 200 elementos de tránsito al 2019.</h3>
+                    <p>El déficit de elementos de tránsito al cierre del 1er trimestre 2019 es del 52% para cumplir el compromiso.</p>
+                    <h3>Contar con 300 elementos de tránsito al 2020.</h3>
+                    <p>Se medirá durante el 2020</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoRojo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 8 Accidentes de transito-->
+            <div class="row comp" id="c8" onclick="muestraLightBox(8)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c8.png" class="img-fluid">
+                    <p class="text-justify">Dirección de movilidad y transporte del municipio de Irapuato, Guanajuato.</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Reducir en un 30% los accidentes de transito al 2019 </h3>
+                    <p>En el primer trimestre se han registrado 313 accidentes de tránsito en Irapuato lo cual está por encima de la meta trazada al 2019 en un 26%.</p>
+                    <h3>Reducir en 50% los accidentes de tránsito al 2020.</h3>
+                    <p>Se medirá durante el 2020.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoRojo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 9 areas recreativas-->
+            <div class="row comp" id="c9" onclick="muestraLightBox(9)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c9.png" class="img-fluid">
+                    <p class="text-justify">Medición propia del Observatorio ciudadano Irapuato ¿Como Vamos?</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Contar con al menos 1.5 m² de áreas recreativas por habitante.</h3>
+                    <p>Al cierre del 1er trimestre 2019 el déficit de áreas recreativas hacia la meta trazada es de un 37%.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 10 accesibilidad y moviliad no motorizada-->
+            <div class="row comp" id="c10" onclick="muestraLightBox(10)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c10.png" class="img-fluid">
+                    <p class="text-justify"></p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Generar un proyecto de accesibilidad y movilidad NO motorizada al 2019.</h3>
+                    <p>Al cierre del 1er trimestre 2019 no se cuenta con un proyecto de movilidad no motorizada.</p>
+                    <h3>Ejecutar en el 2020 el proyecto de Accesibilidad y movilidad NO motorizada generado en el 2019.</h3>
+                    <p>Se medirá en el 2020.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoRojo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 11 Urbanizacion de calles-->
+            <div class="row comp" id="c11" onclick="muestraLightBox(11)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c11.png" class="img-fluid">
+                    <p class="text-justify text-center">Fuente: INEGI 2015</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Urbanizar 250 calles.</h3>
+                    <p>Meta: 250 calles urbanizadas.</p>
+                    <p>Se tiene al momento registro de 1 calle terminada, acorde a la información brindada por el municipio se tiene proyectado 50 calles para este 2019.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 12 Servicio de agua entubada-->
+            <div class="row comp" id="c12" onclick="muestraLightBox(12)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c12.png" class="img-fluid">
+                    <p class="text-justify text-center">Fuente: JAPAMI 2018</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Abatir al 100% el rezago de hogares sin agua entubada en el municipio de Irapuato.</h3>
+                    <p>Meta: se deberá poner servicio de agua entubada a 3601 hogares.</p>
+                    <p>Acorde a la última información registrada proveniente de JAPAMI y en base al último CENSO del INEGI 2015 y JAPAMI, existe un déficit del 20% de viviendas sin este servicio.</p> 
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 13 Drenaje y alcantarillado-->
+            <div class="row comp" id="c13" onclick="muestraLightBox(13)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c13.png" class="img-fluid">
+                    <p class="text-justify text-center">Fuente: JAPAMI 2018</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Abatir al 98% el rezago de hogares sin conexión a la red de alcantarillado y drenaje.</h3>
+                    <p>Meta: Extender el servicio de drenaje a 3395 viviendas.</p>
+                    <p>Al término del primer trimestre del 2019 y en base a la información del último CENSO del INEGI 2015 y JAPAMI, existe un déficit del 21% de viviendas en Irapuato sin este servicio.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 14 Energia electrica-->
+            <div class="row comp" id="c14" onclick="muestraLightBox(14)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c14.png" class="img-fluid">
+                    <p class="text-justify text-center">Fuente: CFE 2018</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Abatir al 100% el rezago de hogares sin conexión a la red eléctrica.</h3>
+                    <p>Meta: Conectar a 717 habitantes a la red pública.</p>
+                    <p>Al término del primer trimestre del 2019 y en base a la información del último CENSO del INEGI 2015 y CFE, existe un déficit del .10% de personas en Irapuato sin este servicio.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 15 Transparencia y rendicion de cuentas-->
+            <div class="row comp" id="c15" onclick="muestraLightBox(15)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c15.png" class="img-fluid">
+                    <p class="text-justify text-center">Fuente: IMCO 2018</p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Cumplir al 2019 con el 100% con los criterios de transparencia en base al Presupuesto de Egresos Modelo Guanajuato que la Auditoria Superior de Guanajuato y el IMCO elaboraron, y mantener este cumplimiento en el trienio.</h3>
+                    <p>Al 1er trimestre 2019 se revisó  los datos de cumplimiento cargados en la página de transparencia del municipio encontrando avance respecto a la evaluación 2018, sin embargo aún aparecen vínculos rotos e información al 2018 sin haber actualizado en lo que va del 2019.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoAmarillo.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 16 ley de deuda publica-->
+            <div class="row comp" id="c16" onclick="muestraLightBox(16)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c16.png" class="img-fluid">
+                    <p class="text-justify"></p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>Apegarse al 100% a la ley de deuda pública para el Estado y los Municipios de Guanajuato.</h3>
+                    <p>Al primer trimestre del 2019 se ha cumplido en este rubro.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoVerde.png" class="img-fluid">
+                </div>
+            </div>
+            <!--compromiso 17 mesa de seguridad-->
+            <div class="row comp" id="c17" onclick="muestraLightBox(17)">
+                <div class="col-sm text-center compromiso">
+                    <img src="assets/img/compromisos/c17.png" class="img-fluid">
+                    <p class="text-justify"></p>
+                </div>
+                <div class="col-sm informacion">
+                    <h3>1.- Instalar la mesa de seguridad acorde al modelo México S.O.S en el 2018.</h3>
+                    <p>Al cierre del primer trimestre del 2019 no se había creado la mesa de Seguridad Ciudadana, sin embargo se estuvo trabajando la creación y ya se instaló.</p>
+                    <h3>2.- Participar en todas las reuniones de la mesa de seguridad durante el trienio.</h3>
+                    <p>Al cierre del primer trimestre del 2019 no se había creado la mesa de Seguridad Ciudadana. Se dará seguimiento en el segundo trimestre del 2019.</p>
+                </div>
+                <div class="col-sm text-center estado">
+                    <img src="assets/img/semaforos/semaforoVerde.png" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <!--Fin de la tabla-->
+
+        <footer>
+        </footer>
+
+        <!--Carga de archivos javascript-->
+        <script src="assets/js/jquery.slim.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

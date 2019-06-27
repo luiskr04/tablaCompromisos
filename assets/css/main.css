@@ -1,0 +1,69 @@
+/*General styles*/ 
+/*Estilos de la tabla en general*/
+.tabla-compromisos .encabezado{background-color:black;color:white;padding:10px;}
+.encabezado img{max-width:40px;max-height:auto;margin:2px;}
+.row {border:1px solid black;border-radius:2px;cursor:pointer;}
+.comp:hover {border:2px solid #D6A40E;opacity:.9;}
+.compromiso img{width:70%;} 
+.compromiso p{font-size:.7rem;color:black;}
+.informacion {padding:10px;}
+.informacion h3{font-size:.8rem;font-weight:bold;}
+.informacion p{font-size:.7rem;}
+
+#c1 .informacion{background-color:#3F3D3E;color:white;}
+#c3 .informacion{background-color:#00415F;color:white;}
+#c4 .informacion{background-color:#600F3A;color:white;}
+#c5 .informacion{background-color:#007969;color:white;}
+#c6 .informacion{background-color:#524F6A;color:white;}
+#c7 .informacion{background-color:#602A0C;color:white;}
+#c8 .informacion{background-color:#F1CE00;color:black;}
+#c9 .informacion{background-color:#B6C72C;color:black;}
+#c10 .informacion{background-color:#00417D;color:white;}
+#c11 .informacion{background-color:#5F5E5A;color:white;}
+#c12 .informacion{background-color:#B6D9F3;color:black;}
+#c13 .informacion{background-color:#000000;color:white;}
+#c14 .informacion{background-color:#F1CE00;color:black;}
+#c15 .informacion{background-color:#BF0411;color:white;}
+#c16 .informacion{background-color:#5C5B50;color:white;}
+#c17 .informacion{background-color:#49240D;color:white;}
+
+
+/*Diseño del lightBox*/
+ #imagen-info{position:fixed;display:none;width:100%;height:100%;z-index:10;background: rgba(0,0,0,.5);overflow:auto;top:0;left:0;cursor:not-allowed;}
+
+ /*Diseño de la imagen dentro del lightBox*/
+ #imagen-info img{position:fixed;width:100%;height:200px;top:50%;margin-top:-100px;}
+
+ /*Diseño del boton "cerrar" dentro del diseño del LightBox*/
+ #btn-cerrar{border-radius:5px;position:absolute;margin:0;padding:0;width:30px;height:30px;font-size: 20px;color: white;background-color: black;z-index:10;}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+.encabezado h1{font-size:.9rem;font-weight:bold;}
+.encabezado p{font-size:.7rem;} 
+.estado img {max-width:100px;} 
+
+ /*Small devices (landscape phones, 576px and up)*/
+ @media (min-width: 576px) {
+
+ }
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+.encabezado h1{font-size:1.7rem;font-weight:bold;}
+.encabezado p{font-size:1.2rem;} 
+.estado img {position:relative;max-width:184px;height:80px;top:50%;margin-top:-40px;}
+
+ /*Diseño de la imagen dentro del lightBox*/
+ #imagen-info img{position:fixed;width:683px;height:384px;top:50%;margin-top:-192px;left:50%;margin-left:-341px;}
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+}
