@@ -1,7 +1,7 @@
 /*General styles*/ 
 /*Estilos de la tabla en general*/
 .tabla-compromisos .encabezado{background-color:black;color:white;padding:10px;}
-.encabezado img{max-width:40px;max-height:auto;margin:2px;}
+.encabezado img{width:2.2rem;height:2.2rem;margin:.2rem;}
 .row {border:1px solid black;border-radius:2px;}
 .comp:hover {border:2px solid #D6A40E;opacity:.9;cursor:pointer;}
 .compromiso img{width:70%;} 
@@ -41,7 +41,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 .encabezado h1{font-size:.9rem;font-weight:bold;}
 .encabezado p{font-size:.7rem;} 
-.estado img {max-width:100px;} 
+.estado img {width:9rem;} 
 
  /*Small devices (landscape phones, 576px and up)*/
  @media (min-width: 576px) {
@@ -59,7 +59,7 @@
 @media (min-width: 992px) {
 .encabezado h1{font-size:1.7rem;font-weight:bold;}
 .encabezado p{font-size:1.2rem;} 
-.estado img {position:relative;max-width:184px;height:80px;top:50%;margin-top:-40px;}
+.estado img {position:relative;width:11rem;height:5rem;top:50%;margin-top:-2.5rem;}
 
  /*Diseño de la imagen dentro del lightBox*/
  #imagen-info img{position:fixed;width:683px;height:384px;top:50%;margin-top:-192px;left:50%;margin-left:-341px;}
